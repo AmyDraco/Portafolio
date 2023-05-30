@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encriptador</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body class="general-background">
+  <header>
+    <img src="Images/AluraLogo.svg" class="logo">
+  </header>
+  <main>
+    <div class="mainContainer">
+      <div class="textContainer">
+        <form>
+          <textarea id="textTransform" class="textAreaTransform" required>Ingrese el texto aquí</textarea>
+          <section class="infoBox">
+            <img src="Images/Info.svg" class="infoData">
+            <legend class="infoText">Solo letras minúsculas y sin acentos</legend>
+          </section>
+          <section class="buttonsContainer">
+            <input type="button" name="encrypt" id="encrypt" value="Encriptar" class="button">
+            <input type="button" name="decrypt" id="decrypt" value="Desencriptar" class="button">
+          </section>
+        </form>
+      </div>
+      <div class="resultContainer">
+        <div class="resultMessage" id="emptyMessage">
+          <img src="Images/guyLookingfor.svg" alt="Chico Buscando" class="guyImage">
+          <h2>Ningún mensaje fue encontrado</h2>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="resultMessage" id="processMessage">
+          <div id="outputParameters"></div>
+          <input type="button" name="copyText" id="copyText" value="Copiar texto" class="button">
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
